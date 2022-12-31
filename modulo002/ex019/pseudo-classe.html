@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        div:hover{
+            background-color: lightskyblue;
+        }
+        div#teste:hover{
+            background-color: rgb(143, 0, 0);
+            color: blue;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: white;
+            color: black;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aqua;
+            color: rgb(0, 100, 100);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Pseudo Classes</h1>
+
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <hr>
+    <div id="teste">
+        Passe o mouse aqui
+        <p>TEXTO EXCONDIDO</p>
+    </div>
+
+    <hr>
+    <p style="text-align: center;"><a href="seletores01.html">Voltar para Seletores</a></p>
+    <p style="text-align: center;"><a href="links.html">Proximo -> Links</a></p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Capitulo 11 - video 31-36</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir essa imagem em vários tamanhos de telas, ou almente e diminua a sua tela do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem Grande">
+    </picture>
+
+
+        <!-- Formatos de áudios... mp3 wav ogg-->
+    <h1>Reproduzindos Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio controls>
+        <source src="midia/muchachos.mp3" type="audio/mpeg">
+        <source src="midia/muchachos.ogg" type="audio/ogg">
+        <source src="midia/muchachos.wav" type="audio/wav">
+    </audio>
+    <p>Para baixar <a href="midia/muchachos.mp3">Clique Aqui.</a></p>
+
+    <h1>Reproduzindo vídeos</h1>
+
+    <h2>Vídos hospedados no servidor do site</h2>
+
+    <video controls width="500px" poster="imagens/capa-v1.png" loop>
+        <source src="midia/video-mp4.mp4" type="video/mp4">
+        <source src="midia/video-webm.webm" type="video/webm">
+    </video>
+
+    <video controls width="500px" poster="imagens/capa-v2.png" loop>
+        <source src="midia/video-mp41.mp4" type="video/mp4">
+        <source src="midia/video2-web.webm" type="video/webm">
+    </video>
+
+    <h2>Vídeos do youtube</h2>
+    <p>Inclusive, este é o vídeo da aula de incorporação de vídeo</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    
+</body>
+</html>
